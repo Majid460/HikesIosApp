@@ -58,8 +58,9 @@ IOS-proj-2
 ## Screenshots
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="path/to/screenshot1.png" alt="Home Screen" width="200" height="400" />
-  <img src="path/to/screenshot2.png" alt="Details Screen" width="200" height="400" />
-  <img src="path/to/screenshot3.png" alt="Profile Screen" width="200" height="400" />
-  <img src="path/to/screenshot4.png" alt="Feature Screen" width="200" height="400" />
+  <img src="Screenshots/Home.png" alt="Home Screen" width="200" height="400" />
+  <img src="Screenshots/ListView.png" alt="List View Screen" width="200" height="400" />
+  <img src="Screenshots/PlaceDetail.png" alt="Details Screen" width="200" height="400" />
+  <img src="Screenshots/Hikes.png" alt="Hikes Screen" width="200" height="400" />
+  <img src="Screenshots/Fav.png" alt="Favorites Screen" width="200" height="400" />
 </div>
