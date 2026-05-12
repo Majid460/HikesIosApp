@@ -53,4 +53,13 @@ IOS-proj-2
 └── Utils
      ├── Extensions
      └── Helpers
-```
+  ```
+
+## Screenshots
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="path/to/screenshot1.png" alt="Home Screen" width="200" height="400" />
+  <img src="path/to/screenshot2.png" alt="Details Screen" width="200" height="400" />
+  <img src="path/to/screenshot3.png" alt="Profile Screen" width="200" height="400" />
+  <img src="path/to/screenshot4.png" alt="Feature Screen" width="200" height="400" />
+</div>
