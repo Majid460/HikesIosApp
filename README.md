@@ -1,11 +1,3 @@
-//
-//  README.md
-//  IOS-proj-2
-//
-//  Created by Majid on 08/05/2026.
-//
-
-
 A SwiftUI iOS application built for learning SwiftUI architecture and layouts.
                                         
 ## Features
@@ -61,5 +53,4 @@ IOS-proj-2
 └── Utils
      ├── Extensions
      └── Helpers
-
-
+```
