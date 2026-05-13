@@ -8,15 +8,30 @@
 import SwiftUI
 
 struct CircleImage: View {
+    
+    var imageName: String
+    var image:Image
+    
     var body: some View {
-        Image("turtlerock")
-            .resizable()
-            .scaledToFit()
-            .frame(maxWidth: .infinity)
-            .clipShape(Circle())
-            .overlay(content: {
-                Circle().stroke(.gray, lineWidth: 4)
-            }).shadow(radius: 10)
+        
+        Group {
+            
+            if imageName == "turtlerock" {
+                
+                image
+                    .resizable()
+                    .frame(width:300,height: 300)
+                
+            } else {
+                
+                image
+            }
+        }
+        .clipShape(Circle())
+        .overlay {
+            Circle().stroke(.gray, lineWidth: 4)
+        }
+        .shadow(radius: 10)
     }
 }
 // Full Image
@@ -30,6 +45,6 @@ struct FullImage: View {
 }
 
 #Preview {
-    CircleImage()
+    //CircleImage(image:Image("turtlerock"))
     FullImage()
 }

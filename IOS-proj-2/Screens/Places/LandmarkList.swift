@@ -8,10 +8,29 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    @StateObject var vm = LandmarkVM()
+
+
     var body: some View {
-        List(landmarks,id: \.id){landmark in
-            LandmarkRow(landmark: landmark)
-        }.padding(.vertical,10)
+        List {
+            Toggle(isOn: $vm.showFavoritesOnly) {
+                Text("Favorites only")
+            }
+            ForEach(vm.filteredLandmarks, id: \.id) { landmark in
+                NavigationLink {
+                    LandmarkDetail(
+                        landmark: landmark,
+                        onToggle: { vm.toggleFavorite(landmark: landmark) }
+                    )
+                } label: {
+                    LandmarkRow(landmark: landmark)
+                }
+            }
+        }.listStyle(.plain)
+            .scrollContentBackground(.hidden)
+            .background(Color.white)
+      
+        .animation(.default, value: vm.filteredLandmarks)
     }
 }
 
